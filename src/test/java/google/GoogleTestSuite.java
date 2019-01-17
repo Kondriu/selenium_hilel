@@ -28,7 +28,7 @@ public class GoogleTestSuite extends BaseTest {
     @Test
     public void checkGoogleMainPageIsOpen() {
         final WebDriver driver = getDriver();
-        final String expectedTittle = "Google1";
+        final String expectedTittle = "Google";
         driver.get("https://google.com");
         final String actualTitle = driver.getTitle();
 //        System.out.println(expectedTittle);
@@ -39,7 +39,7 @@ public class GoogleTestSuite extends BaseTest {
     @Test
     public void checkGoogleSearch() {
         final WebDriver driver = getDriver();
-        final String expectedResultFirstLinkTest = "Компьютерная школа Hillel: курсы IT технологий";
+        final String expectedResultFirstLinkTest = "Компьютерная школа Hillel в Киеве: курсы IT технологий";
 
         //1. открыли главнусю стр google
         driver.get("https://google.com");

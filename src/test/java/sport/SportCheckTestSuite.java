@@ -17,7 +17,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void searchNike() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.typeSearchText("Nike");
         ArrayList actualSearchResults = (ArrayList) page.getQuickSearchResult();
@@ -46,10 +46,10 @@ public class SportCheckTestSuite extends BaseTest {
 
     }
 
-    @Test
+    //@Test
     public void checkMiniCardProductInfo() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         final ProductDetailsPage productDetailsPage = page.selectFirstElementFromThePickedJustForYouSection();
         productDetailsPage.selectProductQty(1);
@@ -77,7 +77,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void checkRegistryEmailErrorMessage() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();
@@ -96,7 +96,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void checkRegistryEmptyEmailErrorMessage() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();
@@ -115,7 +115,7 @@ public class SportCheckTestSuite extends BaseTest {
    // @Test
     public void checkRegistryConfirmEmailErrorMessage() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();
@@ -134,7 +134,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void checkRegistryPasswordErrorMessagePasswordRequired() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();
@@ -153,7 +153,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void checkRegistryPasswordErrorMessagePassword() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();
@@ -172,7 +172,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void checkRegistryPasswordErrorMessageConfirmPassword() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();
@@ -191,7 +191,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void checkRegistryCardNumberErrorMessage() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();
@@ -210,7 +210,7 @@ public class SportCheckTestSuite extends BaseTest {
     //@Test
     public void checkRegistryCaptchaErrorMessage() {
         final WebDriver driver = getDriver();
-        driver.get("https://www.core.sportchek.ca/");
+        driver.get("https://www.sportchek.ca/");
         final SportchekHomePage page = new SportchekHomePage(driver);
         page.clickSignIn();
         page.clickRegisterNow();

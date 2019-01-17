@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GoogleMainPage {
 
-    @FindBy(xpath = "//input[@id='lst-ib']")
+    @FindBy(xpath = "//input[@name='q']")
     private WebElement searchInput;
 
     @FindBy(xpath = "//input[@name='btnK']")

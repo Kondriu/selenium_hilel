@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 public class bookingTest extends BaseTest {
 
-    @Test
+    //@Test
     public void checkBookingSearcj(){
         WebDriver driver = getDriver();
         driver.get("https://www.booking.com/index.en-gb.html");
